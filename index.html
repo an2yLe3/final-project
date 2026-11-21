@@ -19,18 +19,14 @@
       font-family:
     }
     
+  
    .container {
   max-width: 1200px;
   width: 100%;
+     margin: 0 auto;
 }
     
-    .grid-container {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    gap: 20px;
-    }
-   
-    header {
+       header {
       position: relative;
       padding: 10px;
       margin-bottom: 25px;
@@ -39,69 +35,60 @@
       border: 1px solid #000000;
       font-family: "Quattrocento"
     }
-
-    header h1 {
+    
+      header h1 {
       margin: 0;
       font-size: 2em;  
       text-align: left;
       color: #FFDB58
     }
     
-    header h2{
+     header h2{
       margin: 0;
-      font-size: 3em;
+      font-size: 4em;
       text-align: left;
       color: white;
     }
     
-  
-     .container-grid img {
+      .main-content {
       width: 100%;
-      height: 250px;
-      object-fit: cover;
-    }
-    
-     .container-grid {
-      display: grid;
-      grid-template-columns: 50% 50%;
-      gap: 20px;
-      margin-top: 25px;
-      }
-    
-    
-    .main-content {
-      width: 100%;
-      display: inline-block;
-      float: left;
       padding: 25px; 
-      vertical-align: top;
       background-color: #FFFFF0;
       color: black;
       border: 2px solid #0b1a30;
       margin-top: 50px
     }
-    .box-one{
-      width: 100%;
-      display: inline-block;
-      float: left;
-      padding: 25px; 
-      vertical-align: top;
-      background-color: yellow;
-      color: black;
-      border: 2px solid #0b1a30;
-      margin-top: 50px
-    }
-
-    .main-content h3 {
+    
+       .main-content h3 {
       margin-top: 0;
       font-size: 1.2em;
       border-bottom: 2px solid #000000;
       padding-bottom: 8px;
     }
-
-    .main-content p {
+    
+      .main-content p {
       margin-bottom: 25px;
     } 
+    
+      .grid.container {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      margin-top: 25px;
+      gap: 30px;
+    }
+    
+       .grid.container img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .box-one{ 
+      background-color: yellow;
+    }
+
+  
+  
     
   </style>
 </head>
@@ -113,19 +100,18 @@
     <h2>Martial Arts</h2>
   </header>
 
-    <div class="container-grid">
-      <img src="Famous Fighter.jpeg" alt="Picture with Famous BJJ fighter Andy Murasaki">
-      <img src="Group Picture.jpeg" alt="Group picture where I train">
-      <img src=Loss.jpeg alt="Lost at my final fight">
-      <img src="Medal Picture.jpeg" alt="Medal">
-    </div>
   <div class="main-content">
     <h3>Why BJJ Or Judo?</h3>
     <p>I started BJJ at the age of 16 after hearing about it from a friend</p>
     <p>Write here</p>
   </div>
     
-    
+      <div class="grid container">
+      <img src="Famous Fighter.jpeg" alt="Picture with Famous BJJ fighter Andy Murasaki">
+      <img src="Group Picture.jpeg" alt="Group picture where I train">
+      <img src="Loss.jpeg" alt="Lost at my final fight">
+      <img src="Medal Picture.jpeg" alt="Medal">
+    </div>
   
     <div class="main-content box-one">
     <h3>My Personal Career</h3>
