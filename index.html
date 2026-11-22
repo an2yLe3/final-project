@@ -1,165 +1,412 @@
 <!DOCTYPE html>
+
 <html lang="en-ca">
+
 <head>
-  <title>Final Project</title>
-  <meta charset="utf-8">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+<title>Final Project</title>
+
+<meta charset="utf-8">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap" rel="stylesheet">
-  
-  <style>
 
-    * { 
-      box-sizing: border-box; 
-    }
-    
-    body {
-      margin: 0;
-      line-height: 1.6;
-      font-family:
-    }
-    
-  
-   .container {
-  max-width: 1200px;
-  width: 100%;
-     margin: 0 auto;
+
+<style>
+
+
+
+{
+box-sizing: border-box;
+
 }
-    
-       header {
-      position: relative;
-      padding: 10px;
-      margin-bottom: 25px;
-      background-color: black;
-      color: gray;
-      border: 1px solid #000000;
-      font-family: "Quattrocento"
-    }
-    
-      header h1 {
-      margin: 0;
-      font-size: 2em;  
-      text-align: left;
-      color: #FFDB58
-    }
-    
-     header h2{
-      margin: 0;
-      font-size: 4em;
-      text-align: left;
-      color: white;
-    }
-    
-      .main-content {
-      width: 100%;
-      padding: 25px; 
-      background-color: #FFFFF0;
-      color: black;
-      margin-top: 50px
-    }
-    
-       .main-content h3 {
-      margin-top: 0;
-      font-size: 1.2em;
-      border-bottom: 2px solid #000000;
-      padding-bottom: 8px;
-    }
-    
-      .main-content p {
-      margin-bottom: 25px;
-    } 
-    
-      .grid.container { 
-      display: grid;
-      grid-template-columns: 50% 50%;
-      margin-top: 0px;
-      gap: 
-      background-color:#FFF8E1
-    }
-    
-  
-    .box-one{ 
-      background-color: yellow;
-    }
 
-    .image-box{
-    background-color: white;
-    }
-    
-    .image-box img{
-    width: 100%;
-    height: 250px;
-  object-fit: contain;
-    }
-    
-    .image-box p {
-    margin-bottom: 0;
-    text-align: center;
-      font-family: 
-    }
-  
-    .image-box:hover{
-      background: gray
-    }
-  
-  
-    
-  </style>
+
+body {
+
+margin: 0;
+
+line-height: 1.6;
+
+font-family:
+
+}
+
+
+
+.container {
+
+max-width: 1200px;
+
+width: 100%;
+
+margin: 0 auto;
+
+}
+
+
+header {
+
+position: relative;
+
+padding: 10px;
+
+margin-bottom: 25px;
+
+background-color: black;
+
+color: gray;
+
+border: 1px solid #000000;
+
+font-family: "Quattrocento"
+
+}
+
+
+header h1 {
+
+margin: 0;
+
+font-size: 2em;
+
+text-align: left;
+
+color: #FFDB58
+
+}
+
+
+header h2{
+
+margin: 0;
+
+font-size: 4em;
+
+text-align: left;
+
+color: white;
+
+}
+
+
+.main-content {
+
+width: 100%;
+
+padding: 25px;
+
+background-color: #E6E6D8;
+
+color: black;
+
+margin-top: 50px
+
+}
+
+
+.main-content h3 {
+
+margin-top: 0;
+
+font-size: 1.2em;
+
+border-bottom: 2px solid #000000;
+
+padding-bottom: 8px;
+
+}
+
+
+.main-content h4 {
+
+margin-top: 0;
+
+font-size: 1.2em;
+
+padding-bottom: 8px;
+
+
+}
+
+
+.main-content p {
+
+margin-bottom: 25px;
+
+}
+
+
+.grid.container {
+
+display: grid;
+
+grid-template-columns: 50% 50%;
+
+margin-top: 0px;
+
+gap:
+
+background-color:#FFF8E1
+
+}
+
+
+
+.box-one{
+
+background-color: yellow;
+
+}
+
+
+.box-two{
+
+background-color: lightblue;
+
+}
+
+
+
+.image-box{
+
+background-color: white;
+
+}
+
+
+.image-box img{
+
+width: 100%;
+
+height: 250px;
+
+object-fit: contain;
+
+}
+
+
+.image-box p {
+
+margin-bottom: 0;
+
+text-align: center;
+
+font-family:
+
+}
+
+
+.image-box:hover{
+
+background: gray
+
+}
+
+
+.lines {
+
+display: flex;
+
+gap: 120px;
+
+}
+
+
+
+.lines-div {
+
+width: 250px;
+
+height: 3px;
+
+background-color: black;
+
+}
+
+
+.bjj-grid{
+
+display: grid;
+
+grid-template-columns: 33% 33% 33%;
+
+gap: 20px;
+
+}
+
+
+.bjj-col{
+
+border-top: 3px solid black;
+
+padding-top: 12px;
+
+}
+
+
+.bjj-col h5 {
+
+margin: 0 0 10px 0;
+
+font-size: 1.1em;
+
+color: #800020;
+
+}
+
+
+.bjj-col p {
+
+margin: 0;
+
+}
+
+
+</style>
+
 </head>
-<body>
-  
-  <div class="container">
-  <header>
-    <h1>The Gentle Art of </h1>
-    <h2>Martial Arts</h2>
-  </header>
 
-  <div class="main-content">
-    <h3>Why BJJ Or Judo?</h3>
-    <p>I started BJJ at the age of 16 after hearing about it from a friend</p>
-    <p>Write here</p>
-  </div>
-    
-      <div class="grid container">
-        
-        <div class="image-box">
-      <img src="Famous Fighter.jpeg" alt="Picture with Famous BJJ fighter Andy Murasaki">
-          <P>
-            Meeting a famous BJJ Fighter Andy Murasaki
-          </P>
-     </div>
-        
-        <div class="image-box">
-      <img src="Group Picture.jpeg" alt="Group picture where I train">
-          <P>
-            Group Picture of where I used to train
-          </P>
-           </div>
-        
-         <div class="image-box">
-      <img src="Loss.jpeg" alt="Lost at my final fight">
-           <p>
-             My first loss at a big competition
-           </p>
-             </div>
-        
-             <div class="image-box">
-      <img src="Medal Picture.jpeg" alt="Medal">
-          <P>
-            Picture with my Professors Rodrigo Caporal and Nosh Khan
-               </P>
-    </div>
-          </div>
-  
-    <div class="main-content box-one">
-    <h3>My Personal Career</h3>
-    <p>Starting Date: June 26th 2023</p>
-    <p>Two Stripes: November 1th 2023</p>
-    <p>One Stripe: December 11th 2023</p>
-    <p>Blue Belt:September 30th 2024</p>
-  </div>
-    
- </div>
+<body>
+
+
+<div class="container">
+
+<header>
+
+<h1>The Gentle Art of </h1>
+
+<h2>Martial Arts</h2>
+
+</header>
+
+
+
+<div class="main-content">
+
+<h3>Why BJJ Or Judo?</h3>
+
+<p>I started BJJ at the age of 16 after hearing about it from a friend</p>
+
+<p>Write here</p>
+
+</div>
+
+
+<div class="grid container">
+
+
+<div class="image-box">
+
+<img src="Famous Fighter.jpeg" alt="Picture with Famous BJJ fighter Andy Murasaki">
+
+<P>
+
+Meeting a famous BJJ Fighter Andy Murasaki
+
+</P>
+
+</div>
+
+
+<div class="image-box">
+
+<img src="Group Picture.jpeg" alt="Group picture where I train">
+
+<P>
+
+Group Picture of where I used to train
+
+</P>
+
+</div>
+
+
+<div class="image-box">
+
+<img src="Loss.jpeg" alt="Lost at my final fight">
+
+<p>
+
+My first loss at a big competition
+
+</p>
+
+</div>
+
+
+<div class="image-box">
+
+<img src="Medal Picture.jpeg" alt="Medal">
+
+<P>
+
+Picture with my Professors Rodrigo Caporal and Nosh Khan
+
+</P>
+
+</div>
+
+</div>
+
+
+<div class="main-content box-one">
+
+<h3>My Personal Career</h3>
+
+<p>Starting Date: June 26th 2023</p>
+
+<p>Two Stripes: November 1th 2023</p>
+
+<p>One Stripe: December 11th 2023</p>
+
+<p>Blue Belt:September 30th 2024</p>
+
+</div>
+
+<div class="main-content box-two">
+
+<h4>What is BJJ</h4>
+
+<div class="bjj-grid">
+
+<div class="bjj-col">
+
+<h5>01 CONTROL</h5>
+
+<p>Close the distance. Take your opponent down, or pull them into your guard, so the fight happens on the ground where leverage matters more than strength.</p>
+
+</div>
+
+
+
+<div class="bjj-col">
+
+<h5>02 POSITION</h5>
+
+<p>Improve your hold. Pass the legs, climb to side control or mount, or take the back. Each step makes the next move easier.</p>
+
+</div>
+
+
+
+<div class="bjj-col">
+
+<h5>03 SUBMIT</h5>
+
+<p>Finish with a choke or a joint lock. Once it is locked in, your opponent taps, the round ends, and nobody needs to throw a punch.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </body>
+
 </html>
-  
