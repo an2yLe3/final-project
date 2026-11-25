@@ -78,7 +78,7 @@ color: black;
 font-size: 1.2em;
 border-bottom: 2px solid black;
 padding-bottom: 8px;
-font-family:"Quattrocento";
+font-family: "Quattrocento";
 }
 
 
@@ -86,7 +86,7 @@ font-family:"Quattrocento";
 margin-top: 0;
 font-size: 1.2em;
 padding-bottom: 8px;
-font-family:"Quattrocento";
+font-family: "Quattrocento";
 }
 
 
@@ -104,6 +104,10 @@ gap: 15px;
 
 
 .box-two{
+background-color: lightblue;
+}
+  
+.box-three{
 background-color: lightblue;
 }
 
@@ -148,11 +152,36 @@ padding-top: 12px;
 margin: 0 0 10px 0;
 font-size: 1.1em;
 color: #800020;
-font-family:"Quattrocento";
+font-family: "Quattrocento";
 }
 
 
 .bjj-col p {
+margin: 0;
+}
+
+  .judo-grid{
+display: grid;
+grid-template-columns: 32% 32% 32%;
+gap: 20px;
+}
+
+
+.judo-col{
+border-top: 3px solid black;
+padding-top: 12px;
+}
+
+
+.judo-col h5 {
+margin: 0 0 10px 0;
+font-size: 1.1em;
+color: #800020;
+font-family: "Quattrocento";
+}
+
+
+.judo-col p {
 margin: 0;
 }
 
@@ -175,7 +204,7 @@ font-weight: 300;
 margin: 0;
 padding: 0;
 text-align: center;
-font-family:"Oswald";
+font-family: "Oswald";
 background-color: gray;
 }
 
@@ -224,9 +253,9 @@ color: white;
 <div class="grid container">
 <div class="image-box">
 <img src="Famous Fighter.jpeg" alt="Picture with Famous BJJ fighter Andy Murasaki">
-<P>
+<p>
 Meeting a famous BJJ Fighter Andy Murasaki
-</P>
+</p>
 </div>
 <div class="image-box">
 <img src="Group Picture.jpeg" alt="Group picture where I train">
@@ -255,6 +284,8 @@ Picture with my Professors Rodrigo Caporal and Nosh Khan
   <p class="personal-career">December 11th 2023: <b>Earned One more Stripe</b></p>
 <p class="blue-belt">September 30th 2024: <b>Finally Promoted To Blue Belt</b></p>
 </div>
+  
+  
 <div class="main-content box-two">
 <h4>What is BJJ</h4>
 <div class="bjj-grid">
@@ -269,6 +300,23 @@ Picture with my Professors Rodrigo Caporal and Nosh Khan
 </div>
 
 <div class="bjj-col">
+<h5>03 SUBMIT</h5>
+<p>Finish with a choke or a joint lock. Once it is locked in, your opponent taps, the round ends, and nobody needs to throw a punch.</p>
+  
+  <div class="main-content box-three">
+<h4>What is Judo</h4>
+<div class="judo-grid">
+<div class="judo-col">
+<h5>01 CONTROL</h5>
+<p>Close the distance. Take your opponent down, or pull them into your guard, so the fight happens on the ground where leverage matters more than strength.</p>
+</div>
+
+<div class="judo-col">
+<h5>02 POSITION</h5>
+<p>Improve your hold. Pass the legs, climb to side control or mount, or take the back. Each step makes the next move easier.</p>
+</div>
+
+<div class="judo-col">
 <h5>03 SUBMIT</h5>
 <p>Finish with a choke or a joint lock. Once it is locked in, your opponent taps, the round ends, and nobody needs to throw a punch.</p>
 </div>
